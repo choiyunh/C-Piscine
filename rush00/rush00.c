@@ -1,13 +1,12 @@
 #include <unistd.h>
-#include "./ft_putchar.c"
 
-void	print_line(char start, char middle, char end, int column_count)
+void	print_line(char left, char line, char right, int col)
 {
-	ft_putchar(start);
-	while (--column_count > 1)
-		ft_putchar(middle);
-	if (column_count)
-		ft_putchar(end);
+	ft_putchar(left);
+	while (--col > 1)
+		ft_putchar(line);
+	if (col)
+		ft_putchar(right);
 }
 
 void	rush(int x, int y)
