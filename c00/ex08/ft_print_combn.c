@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yunhchoi <yunhchoi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yunhchoi <yunhchoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 18:10:22 by yunhchoi          #+#    #+#             */
-/*   Updated: 2022/02/06 17:53:42 by yunhchoi         ###   ########.fr       */
+/*   Updated: 2022/02/10 13:51:12 by yunhchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	g_is_first;
+int		g_is_first;
 
 void	ft_putchar(char c)
 {

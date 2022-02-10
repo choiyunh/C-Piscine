@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yunhchoi <yunhchoi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yunhchoi <yunhchoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 18:09:45 by yunhchoi          #+#    #+#             */
-/*   Updated: 2022/02/06 17:15:26 by yunhchoi         ###   ########.fr       */
+/*   Updated: 2022/02/10 13:51:05 by yunhchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,4 @@ void	ft_print_comb(void)
 		}
 		str[0]++;
 	}
-}	
+}
