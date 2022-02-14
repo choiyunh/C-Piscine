@@ -6,7 +6,7 @@
 /*   By: yunhchoi <yunhchoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:01:54 by jaewlee           #+#    #+#             */
-/*   Updated: 2022/02/13 20:11:56 by yunhchoi         ###   ########.fr       */
+/*   Updated: 2022/02/13 21:57:40 by yunhchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	map_init(int map[4][4])
 		col = 0;
 		while (col < 4)
 		{
-			map[col][row] = 0;
+			map[row][col] = 0;
 			col++;
 		}
 		row++;

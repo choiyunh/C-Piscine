@@ -6,7 +6,7 @@
 /*   By: yunhchoi <yunhchoi@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:02:19 by jaewlee           #+#    #+#             */
-/*   Updated: 2022/02/13 16:22:09 by yunhchoi         ###   ########.fr       */
+/*   Updated: 2022/02/13 21:37:36 by jaewlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,17 @@ void	print_map(int map[4][4])
 
 	col = 0;
 	row = 0;
-	while (col < 4)
+	while (row < 4)
 	{
-		while (row < 4)
+		while (col < 4)
 		{
-			ft_putchar(map[col][row] + '0');
-			if (row != 3)
+			ft_putchar(map[row][col] + '0');
+			if (col != 3)
 				ft_putchar(' ');
-			++row;
+			++col;
 		}
 		ft_putchar('\n');
-		row = 0;
-		++col;
+		col = 0;
+		++row;
 	}
 }
