@@ -39,7 +39,7 @@ int		brackets(char *str, char *stack)
 		}
 		if (str[i] == ')' || str[i] == ']' || str[i] == '}')
 		{
-			if (!stack[top])
+			if (top == -1)
 				return (0);
 			else if (!matching(stack[top], str[i]))
 				return (0);
@@ -51,7 +51,7 @@ int		brackets(char *str, char *stack)
 		}
 		i++;
 	}
-	if (stack[top] == 0)
+	if (top == -1)
 		return (1);
 	return (0);
 }
