@@ -4,7 +4,7 @@
 typedef struct t_list
 {
 	struct t_list	*next;
-	void			*data;
+	int				*data;
 }					t_list;
 
 #endif

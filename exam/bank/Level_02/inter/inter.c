@@ -18,7 +18,7 @@ int		main(int ac, char **av)
 {
 	int i;
 	int i2;
-
+	int alpha[256];
 	i = 0;
 	if (ac == 3)
 	{
@@ -29,9 +29,10 @@ int		main(int ac, char **av)
 			{
 				if (av[1][i] == av[2][i2])
 				{
-					if (check_doubles(av[1], av[1][i], i))
+					if (alpha[av[1][i]] == 0)
 					{
 						write(1, &av[1][i], 1);
+						alpha[av[1][i]] = 1;
 						break ;
 					}
 				}

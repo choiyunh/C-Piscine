@@ -25,24 +25,24 @@ void    fprime(int n)
 		printf("%d", n);
 	else
 	{
-	while (n > 0)
-	{
-		while (n % i >= 0 )
+		while (n > 0)
 		{
-			if (n % i == 0)
+			while (n % i >= 0 )
 			{
-				printf("%d", i);
-				n = n / i;
-				break ;
+				if (n % i == 0)
+				{
+					printf("%d", i);
+					n = n / i;
+					break ;
+				}
+				i++;
 			}
-			i++;
+			n1 *=i;
+			if (n1 != n2)
+				printf("*");
+			else 
+				break ;
 		}
-		n1 *=i;
-		if (n1 != n2)
-			printf("*");
-		else 
-			break ;
-	}
 	}
 }
 
@@ -52,8 +52,8 @@ int main (int argc, char **argv)
 	(void)argc;
 	if (argc == 2)
 	{
-	n = atoi(argv[1]);
-	fprime(n);
+		n = atoi(argv[1]);
+		fprime(n);
 	}
 	printf ("\n");
 	return 0;
